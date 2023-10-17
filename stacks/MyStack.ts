@@ -47,6 +47,7 @@ export function MyStack({ stack }: StackContext) {
     retryOnServiceExceptions: false,
   });
 
+
   const stateMachine = new StateMachine(stack, "StateMachineSMS", {
     tracingEnabled: false,
     definitionBody: DefinitionBody.fromChainable(
